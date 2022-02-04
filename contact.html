@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tien Dao Portfolio. Where your wildest ideas are turned into incredible reality. (548)3885898">
+    <meta name="keywords"
+        content="
+        web design sites, web designers near me, 
+        web developer freelance, web developer near me, web, website, mobile, applications, development, design, freelancer, social, portfolio, theme, template, ">
+    <meta name="author" content="Tien Dao">
+    <title>Tien Dao Contact page</title>
+    <link rel="stylesheet" href="css/FontAwesome_all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background boxes animations -->
+    <div class="wrapper">
+        <div class="box-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger "></span>
+        </div>
+        <!-- Use aria aria-labelledby to provide a label for an element to be read by screen readers -->
+        <nav class="nav" role="navigation" aria-labelledby="nav-heading">
+            <!--role="presentation" stops the screen reader from reading the "semantics of an element"-->
+            <ul class="menu-nav" role="presentation">
+                <li class="menu-nav__item "><a href="index.html" class="menu-nav__link">Home</a></li>
+                <li class="menu-nav__item "><a href="about.html" class="menu-nav__link">About Me</a></li>
+                <li class="menu-nav__item "><a href="projects.html" class="menu-nav__link">My Projects</a></li>
+                <li class="menu-nav__item active"><a href="contact.html" class="menu-nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="formContainer">
+                <!-- The name of heading 1 will be focusable with the tab key -->
+                <h1 tabindex="0">Contact Me</h1>
+                <hr>
+                <p>I would love for any feedback! <br> Leave a messages below to connect with me</p>
+                <div class="formContainer__categories">
+
+                    <!--Fullname textbox (mandatory)-->
+                    <label for="username" class="addStar label--display fl">Name</label>
+                    <input type="text" name="username" id="username" placeholder="Full Name" required size="24">
+                    <!--Email textbox-->
+                    <label for="email" class="label--display fl">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" size="24">
+                    <!--Phone textbox-->
+                    <label for="phone" class="label--display fl">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" size="12">
+                    <!-- Radio group selection -->
+                    <div class="clear"></div>
+                    <label style="width:200px">Contact Me By</label>
+                    <div id="contact__type">
+                        <input type="radio" name="contact__type" id="EmailContact">
+                        <label for="EmailContact">E-Mail</label>
+                        <input type="radio" name="contact__type" id="PhoneContact">
+                        <label for="PhoneContact">Phone</label>
+                    </div>
+                    <!-- Dropdown MessageType selection -->
+                    <label for="MessageType" style="width:200px">Message Type:</label>
+                    <select name="MessageType" id="MessageType" style="width:100px">
+                        <option>Query</option>
+                        <option>Request</option>
+                        <option>Other</option>
+                    </select>
+                    <!-- Text message (mandatory) -->
+                    <label for="Message" class="addStar message--label">Message</label>
+                    <textarea name="Message" id="Message" cols="28" rows="6" required class="fl"></textarea>
+                    <div class="clear"></div>
+                    <!--Submit button-->
+                    <button id="submitBtn" class="formButton" value="Submit your letter">Submit</button>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="copyright">
+                        &copy; Copyright 2021
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/dao.minhtien"> <i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/tiendao/"> <i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://github.com/TienDao520"> <i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
